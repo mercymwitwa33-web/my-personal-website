@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website - ICT251 Student</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+        <h1>Welcome to My Personal Website</h1>
+        <p>ICT251 Web Technologies Student - mulungushi University</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#hobbies">My Hobbies</a>
+        <a href="#learning">Learning Plan</a>
+        <a href="#photos">My Photos</a>
+        <a href="#media">My Media</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>
+                My name is [Mercy Mwitwa], a student at the School of Engineering and Technology, 
+                pursuing a programme in computer science. I am from Ndola on  the Copperbelt 
+                Province. I have a strong interest in how websites work and how they can be used to solve local 
+                problems. I enjoy learning new technologies and practicing coding. This website is part of my 
+                ICT251 assignment to enhance my first website with proper structure, media and styling.
+            </p>
+        </section>
+
+        <section id="hobbies" class="content-section">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Reading - especially technology blogs</li>
+                <li>Football - playing with friends on weekends</li>
+                <li>Coding - building small projects in Java and HTML</li>
+            </ul>
+
+            <h2>My Learning Plan</h2>
+            <ol>
+                <li>Practice HTML and CSS daily for at least 1 hour</li>
+                <li>Watch MDN Web Docs tutorials and build examples</li>
+                <li>Create a small project each week and push it to GitHub</li>
+            </ol>
+            <p>Learn more about web development on <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank">MDN Web Docs - Learn Web Development</a>.</p>
+        </section>
+
+        <section id="learning" class="content-section">
+            <h2>Weekly Web Learning Plan</h2>
+            <table>
+                <caption>My Weekly Practice Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Practice Task</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML Structure</td>
+                        <td>Build semantic layout with header, nav, main</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>CSS Styling</td>
+                        <td>Style navigation and responsive images</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Media & Forms</td>
+                        <td>Add video, audio and test contact form</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="photos" class="content-section">
+            <h2>My Photos</h2>
+            <div class="photo-gallery">
+                <figure>
+                    <img src="images/photo1.jpg" alt="on my way to attend the ICTAZ hackathon at mulungushi university">
+                    <figcaption>Photo 1: on my way to attend the ICTAZ hackathon at mulungushi university.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/photo2.jpg" alt="View of mulungushi university main gate in the afternoon">
+                    <figcaption>Photo 2: this photo was taken in kabwe. Photo taken by me.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/photo3.jpg" alt="was just relaxing inmy room after along day of coding">
+                    <figcaption>Photo 3: having a free time after coding- one of my favourite hobbies. Photo taken by me, faces blurred with permission.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="media" class="content-section">
+            <h2>My Media</h2>
+            
+            <h3>Introduction Video</h3>
+            <video controls>
+                <source src="videos/intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p><strong>Video Summary (for accessibility):</strong> In this video I introduce myself as mercy mwitwa astudent at mulungushi university, a student of ICT at CBU. I mention that I want to learn how to build responsive websites that work well on phones, because most people in Zambia access the internet via mobile.</p>
+
+            <h3>Voice Note About My Hobby</h3>
+            <audio controls>
+                <source src="videos/voice.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p>This is a 20-second recording where I describe the program im doing which has web technology as a course.</p>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2>Contact Me</h2>
+            <p>This form does not send data anywhere - it is for demonstration only. It will check required fields locally.</p>
+            <form action="#" method="post">
+                <label for="name">Mercy mwitwa:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">mercymwitwa33@gmail.com:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="topic">Topic:</label>
+                <select id="topic" name="topic">
+                    <option value="assignment">Assignment</option>
+                    <option value="hobby">Hobby</option>
+                    <option value="general">General</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 [Mercy Mwitwa] - ICT251 Activity 2 - All photos and recordings are my own.</p>
+    </footer>
+</body>
+</html>
+    

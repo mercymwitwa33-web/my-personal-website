@@ -1,0 +1,158 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #1a1a1a;
+}
+
+/* Header - ID selector example */
+header {
+    background-color: #0d1b2a;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 5px solid #415a77;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+/* Navigation - horizontal + hover */
+nav {
+    background-color: #1b263b;
+    padding: 0.8rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: #e0e1dd;
+    text-decoration: none;
+    padding: 10px 16px;
+    margin: 0 4px;
+    display: inline-block;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav a:hover, nav a:focus {
+    background-color: #415a77;
+    color: #ffffff;
+}
+
+/* Class selector for all sections */
+.content-section {
+    background: white;
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 900px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.content-section h2 {
+    color: #1b263b;
+    border-bottom: 2px solid #778da9;
+    padding-bottom: 0.5rem;
+}
+
+/* Photos */
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.photo-gallery figure {
+    flex: 1 1 250px;
+    margin: 0;
+    background: #f9fafb;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    caption-side: top;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #1b263b;
+    color: white;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button {
+    background-color: #415a77;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #1b263b;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #0d1b2a;
+    color: #e0e1dd;
+    margin-top: 2rem;
+}
+
+/* Responsive - no horizontal scroll */
+@media (max-width: 600px) {
+    header h1 { font-size: 1.6rem; }
+    nav a { display: block; margin: 5px 0; }
+}
